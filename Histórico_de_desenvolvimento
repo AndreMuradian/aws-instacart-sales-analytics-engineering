@@ -1,0 +1,9 @@
+Histórico de desenvolvimento
+Registros das entregas do projeto AWS Instacart Analytics Engineering.
+2026-11-23 — Camada Bronze: upload e catálogo inicial
+- Enviados seis arquivos CSV do Instacart para o Amazon S3.
+- Criado/selecionado o database vendas no Glue Data Catalog.
+- Tabela aisles criada manualmente na interface do AWS Glue Data Catalog, definindo as colunas aisle_id (int) e aisle (string).
+- Outras cinco tabelas registradas via comandos SQL no Amazon Athena.
+- Identificado erro de leitura do cabeçalho CSV (BAD_DATA) em aisles; documentado ajuste skip.header.line.count = 1.
+- Investigada falha AccessDenied em CreateCrawler por meio do AWS CloudTrail; causa raiz não confirmada.
